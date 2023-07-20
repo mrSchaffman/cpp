@@ -4,7 +4,6 @@
  * @barth.feudong
 */
 
-#include<string>
 namespace entity
 {
 	class EntityInterface
@@ -35,7 +34,7 @@ namespace entity
 		}
 		~Point() {}
 		virtual EntityPrototypInterface& clone(){
-			return new Point(this);                 // TODO: Memory Management...
+			return new Point(*this);                 // TODO: Memory Management...
 		}
 	};
 
