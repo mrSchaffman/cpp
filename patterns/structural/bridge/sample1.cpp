@@ -71,7 +71,7 @@ namespace entity
     class ShapeInterface : private service::DrawableInterface, private service::ResizableInterface
     {
     protected:
-        service::RendererInterface &m_render;
+        service::RendererInterface &m_render;       // The Bridge
    
     public:
         ShapeInterface(service::RendererInterface & renderer):m_render{renderer}{}
@@ -105,6 +105,6 @@ int main(){
     using namespace entity;
     Circle myCircle(23.3,43.0,20,myRenderer);
     myCircle.draw();
-    
+
     return 0;
 }
