@@ -4,7 +4,6 @@
  * @barth.feudong
  */
 
-// visitor examples for design patterns c++ book
 #include <sstream>
 #include <string>
 #include <iostream>
@@ -78,9 +77,6 @@ void main()
             new DoubleExpression{3}
         }
     };
-    ostringstream oss;
-    // e->print(oss);
-
 
     printer::ExpressionPrinter ep;
     ep.print(e);
